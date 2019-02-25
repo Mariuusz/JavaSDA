@@ -1,4 +1,4 @@
-package pl.sda.str84;
+package pl.sda.str84_Dziedziczenie;
 
 public class Kabriolet extends Samochod {
     boolean czyDachSchowany;

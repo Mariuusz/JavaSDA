@@ -1,4 +1,4 @@
-package pl.sda.str118;
+package pl.sda.str118_Abstrakcja_Polimorfizm;
 
 public class Prostokat extends Czworokat{
 

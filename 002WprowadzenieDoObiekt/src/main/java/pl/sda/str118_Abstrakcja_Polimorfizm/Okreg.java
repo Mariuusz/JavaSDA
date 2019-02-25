@@ -1,4 +1,4 @@
-package pl.sda.str118;
+package pl.sda.str118_Abstrakcja_Polimorfizm;
 
 public class Okreg extends Figura {
     protected static final double PI = 3.14;

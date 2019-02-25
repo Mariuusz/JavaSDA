@@ -1,4 +1,4 @@
-package pl.sda.str118;
+package pl.sda.str118_Abstrakcja_Polimorfizm;
 
 //        1.Utwórz klasę SymulatorFarby
 //        2.Dodaj metodę publiczną statyczną :

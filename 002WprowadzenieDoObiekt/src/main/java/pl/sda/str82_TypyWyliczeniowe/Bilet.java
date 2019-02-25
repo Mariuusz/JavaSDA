@@ -1,4 +1,4 @@
-package pl.sda.str82;
+package pl.sda.str82_TypyWyliczeniowe;
 
 //        1.Zamodelować sytuację zakupu biletu
 //        2.Utworzyć enumBilet

@@ -1,4 +1,4 @@
-package pl.sda.str84;
+package pl.sda.str84_Dziedziczenie;
 
 //    1.Utwórz klasę Samochód o metodach:
 //        przyspiesz():void-metoda zwiększa aktualną predkośćsamochodu o 10 km/h.

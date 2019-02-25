@@ -1,4 +1,4 @@
-package pl.sda.str53;
+package pl.sda.str53_Stos_Sterta;
 
 //Jak przechowywane są zmienne w Javie?
 //        Stos i sterta
