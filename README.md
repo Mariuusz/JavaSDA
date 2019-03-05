@@ -6,3 +6,4 @@ Kurs Java
 5. Powtórka;
 6. Interfejsy; Klasy i metody abstrakcyjne;
 7. Typy generyczne;
+8. Kolekcje;
