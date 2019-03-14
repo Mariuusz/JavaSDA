@@ -7,3 +7,4 @@ Kurs Java
 6. Interfejsy; Klasy i metody abstrakcyjne;
 7. Typy generyczne;
 8. Kolekcje;
+9. Set;
