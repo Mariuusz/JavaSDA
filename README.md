@@ -8,3 +8,4 @@ Kurs Java
 7. Typy generyczne;
 8. Kolekcje;
 9. Set;
+10. Streams;
