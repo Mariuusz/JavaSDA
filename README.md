@@ -9,3 +9,4 @@ Kurs Java
 8. Kolekcje;
 9. Set;
 10. Streams;
+11. Optional; Lambda;
