@@ -1,0 +1,36 @@
+Pobierz od użytkownika napisy, a następnie wyświetl te napisy w kolejności zgodnej z sumą wartości liter w napisie. Zakładając, że a=1
+ola = 15 + 12 + 1 = 28
+ala = 1 + 12 + 1 = 14
+Wyświetl je w formie jak powyżej. Zakładamy, że wszystkie litery będą małe oraz bez polskich znaków.
+
+1. Przedstaw opis słowny problemu
+2. Przedstaw schemat blokowy
+3. Zaimplementuj algorytm.
+
+Rozwinięcie:
+2. Wykonaj algorytm również dla dużych liter, zakładając, że duże litery są mniej ważne (A=1, B=2, ..., Z=32,a=33, b=34)
+3. Wybierz 8 dowolnych liter i nadaj im odpowiednie wagi. Posortuj i wyświetl napisy jak poprzednio oczywiście uwzględniając wagi.
+4. Na podstawie algorytmu Levenshteina oblicz minimalna liczbę działań prostych oraz podobieństwa wyrazów podanych od użytkownika (zakładamy, że sprawdzamy podobieństwo do pierwszego podanego wyrazu)
+
+Opis algorytmu
+Algorytm Levenshteina, służy do liczenia odległości edycyjnej. Jest to najmniejsza liczba działań prostych, przeprowadzająca jeden napis w drugi.
+
+Działania proste to:
+wstawienie nowego znaku
+usuniecie znaku
+zamiana na inny znak
+
+Jak działa algorytm?
+Ustala długość łańcuchów znaków (n – długość łańcucha pierwszego, m – długość łańcucha drugiego),
+Tworzy macierz o rozmiarze (n+1) x (m+1),
+Inicjalizuje pierwszy wiersz wartościami od 0 do n,
+Inicjalizuje pierwszą kolumnę wartościami od 0 do m,
+Sprawdza każdy znak z łańcucha pierwszego (indeks i od 1 do n),
+Sprawdza każdy znak z łańcucha drugiego (indeksy j od 1 do m),
+jeżeli znak na pozycji i równa się znakowi na pozycji j. to koszt jest równy zero,
+jeżeli znak na pozycji i jest różny od znaku na pozycji j to koszt wynosi 1,
+Ustala wartość komórki i,j jako minimum:
+komórka powyżej + 1,
+komórka z lewej + 1,
+komórka po skosie (góra, lewo) + koszt.
+Algorytm powtarzamy dla wszystkich znaków, całkowity koszt otrzymamy w komórce o indeksie n, m.

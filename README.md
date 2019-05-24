@@ -13,3 +13,4 @@ Kurs Java
 12. Data i czas;
 13. Adnotacje;
 14. GIT;
+15. Algorytmy;

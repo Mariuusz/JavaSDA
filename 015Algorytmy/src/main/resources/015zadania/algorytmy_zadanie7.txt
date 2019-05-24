@@ -1,0 +1,8 @@
+Fibonacci: ciąg, w którym kolejny element jest sumą dwóch poprzednich elementów:
+1, 1, 2, 3, 5, 8, 13, 21, 34...
+
+Silnia: iloczyn wszystkich liczb naturalnych dodatnich nie większych niż n:
+4! = 1 * 2 * 3 * 4 = 24
+5! = 1  * 2  * 3  * 4  * 5 = 120
+6! = 1  * 2  * 3  * 4  * 5  * 6 = 720
+7! = 1  * 2  * 3  * 4  * 5  * 6 * 7 = 5040

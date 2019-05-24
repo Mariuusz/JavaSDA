@@ -1,0 +1,36 @@
+Przygotuj program, który wydrukuje na ekran hierarchiczną zależność katalogów: nazwy podkatalogów i plików mają być przesunięte w prawo w stosunku do katalogu nadrzędnego. Przygotuj wersję rekurencyjną.
+Rekurencyjna wersja:
+func drzewo (wcięcie, plik)
+  wyświetl wcięcie
+  wyświetl nazwę pliku
+  jeżeli aktualny plik jest folderem
+    wywołaj rekurencyjnie aktualną funkcję jako parametry dając wcięcie powiększone o spację oraz listę plików w tym folderze
+Wywołaj funkcję dla folderu z projektami.
+* hint: sprawdzenie czy plik jest katalogiem:
+  File f = new File(path);
+  f.isDirectory()
+* hint: pobranie plików w danym katalogu:
+  File f = new File(path);
+  f.listFiles();
+
+Rozwinięcie:
+2. Przygotuj funkcję, która sprawdzi czy szukany plik istnieje w aktualnym folderze
+    Funkcja ma działać podobnie jak przeglądanie plików, czyli robimy funkcję rekurencyjną, która dostaje nazwę plik
+    W funkcji sprawdzamy czy nazwa pliku jest taka sama jak szukana nazwa.
+    Jeżeli tak zwracamy true.
+    Jeżeli nie przechodzimy do kolejnego podfolderu
+
+3. Przygotuj funkcję, która wyszuka określony plik i sprawdzi czy w tym pliku znajduje się szukane słowo.
+    Przygotowujemy funkcję, która przyjmuje dwa argumenty. Jednym jest szukany plik, drugim jest szukane słowo.
+    Wykorzystując algorytm z pkt3. wyszukujemy plik.
+    Jeżeli go znajdziemy, pobieramy wszystkie linie z pliku, a następnie sprawdzamy czy istnieje w nich szukane przez nas słowo.
+    Jeżeli tak zwracamy true.
+    Jeżeli nie, zwracamy false.
+
+4. Przygotuj funkcję, która w danym folderze i podfolderach sprawdzi czy w którymkolwiek pliku znajduje się szukane słowo.
+    Algorytm podobny do tego powyżej z tą różnicą, że szukamy słowa nie w konkretnym pliku tylko, ale w każdym znalezionym pliku.
+
+5. Przygotuj funkcję, która w danym folderze i podfolderach wyszuka wszystkie pliki zawierające konkretne słowo.
+    Działanie podobne do pkt5. tylko tym razem nie zwracamy true/false, a zwracamy listę wszystkich plików.
+    Musimy pamiętać, że przy każdej rekurencji musimy scalać znalezione pliki, żeby zwrócić pełną listę.
+6. Przygotuj wersję iteracyjną.

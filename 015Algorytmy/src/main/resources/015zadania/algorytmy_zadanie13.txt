@@ -1,0 +1,25 @@
+Napisz program, który przygotuje klasę Student zawierającą:
+- unikalne ID
+- Imię i nazwisko studenta,
+- średnią ocen
+- numer indexu
+- pesel
+
+Następnie przygotuj funkcję, która stworzy kilkunastu studentów w liście (dane mogą być dowolne).
+Następnie program powinien wyświetlić menu pozwalające
+- wyświetlić wszystkich studentów w porządku dodawania
+- wyświetlić studentów w kolejności według nazwiska
+- wyświetlić studentów w kolejności według średniej ocen
+- wyświetlić studentów w kolejności według numeru indexu
+- wyświetlić studentów w kolejności według peselu
+- wyjść z programu
+
+Po wybraniu odpowiedniej opcji dane powinny wyświetlić się w odpowiedniej kolejności.
+Do sortowania użyj funkcji
+List.sort()
+Pomocna może być funkcja, która otrzyma jako parametr Enum, który powie w jaki sposób wyświetlić dane i zwróci dane w odpowiedniej kolejności.
+
+Rozwinięcie:
+1. Zamiast tworzyć kilkunastu studentów w liście, przygotuj funkcję, która wypełni obiekt studenta losowymi danymi, a nastepnie zapisze tych losowych studentów do pliku w formacie csv (kolumny oddzielone przecinkami, wiersze - enterami). Przetestuj działanie dla kilkunastu studentów, jednak miej na uwadze, że funkcja powinna móc losowo zapisać dowolną liczbę studentów (docelowo kilkanaście tysięcy).
+2. Pobierz z pliku wszystkich użytkowników, posortuj ich w odpowiedni sposób. Wyświetl na ekranie tylko ostatnich kilkunastu studentów.
+3. Dodaj możliwość stronicowania przez naciśnięcie spacji/backspacji.

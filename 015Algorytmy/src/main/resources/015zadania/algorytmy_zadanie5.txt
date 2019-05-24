@@ -1,0 +1,11 @@
+Przygotuj algorytm wyświetlający palindrom, czyli liczbę, która czytana od tyłu będzie taka sama jak od przodu.
+
+1. Przedstaw opis słowny problemu
+2. Przedstaw schemat blokowy
+3. Zaimplementuj algorytm.
+
+Rozwinięcie:
+2. Z wykorzystaniem jednej pętli
+3. Sprawdź czy napisy są palindromami
+   - mozejutrotadamadatortujezom
+   - mozejutrotaadamadatortujezom

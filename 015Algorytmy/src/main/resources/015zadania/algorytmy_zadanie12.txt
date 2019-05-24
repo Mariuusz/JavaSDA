@@ -1,0 +1,8 @@
+Pobierz od użytkownika pary liczb (wartość, waga). Następnie zakładając, że w plecaku może się zmieścić maksymalnie 30, zaproponuj algorytm, który zapakuje przedmioty o jak największej wartości.
+
+1. Przedstaw opis słowny problemu
+2. Przedstaw schemat blokowy
+3. Zaimplementuj algorytm.
+
+Rozwinięcie:
+2. Zaproponuj optymalizację algorytmu

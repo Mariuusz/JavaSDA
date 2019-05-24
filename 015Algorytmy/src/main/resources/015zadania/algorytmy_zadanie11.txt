@@ -1,0 +1,8 @@
+Pobierz z pliku dane, a następnie wyświetl wyrazy pomijając duplikaty
+
+1. Przedstaw opis słowny problemu
+2. Przedstaw schemat blokowy
+3. Zaimplementuj algorytm.
+
+Rozwinięcie:
+2. Wyświetl wyrazy łącznie z ilością duplikatów

@@ -1,0 +1,15 @@
+Pobierz od użytkownika napis oraz liczbę. Następnie zaszyfruj i odszyfruj wiadomość za pomocą algorytmu cezara.
+
+1. Przedstaw opis słowny problemu
+2. Przedstaw schemat blokowy
+3. Zaimplementuj algorytm.
+
+Rozwinięcie:
+2. Znając tylko pierwszą literę tekstu jawnego i mając tekst zaszyfrowany napisz algorytm, który odszyfruje cały tekst.
+3. Znając jeden dowolny wyraz tekstu jawnego i mając tekst zaszyfrowany napisz algorytm, który odszyfruje cały tekst.
+4. Czy jesteśmy w stanie odszyfrować tekst bez klucza? Ile prób nam to zajmie?
+5. Napisz algorytm deszyfrujący znając jedynie zaszyfrowany tekst. Hint: dostaniemy kilka odszyfrowanych wiadomości.
+6. Wiedząc, że najczęściej występującą literą w tekście jawnym jest litera a, napisz program deszyfrujący.
+
+Algorytm Cezara:
+Jest to rodzaj szyfru podstawieniowego, w którym każda litera tekstu jawnego (niezaszyfrowanego) zastępowana jest inną, oddaloną od niej o stałą liczbę pozycji w alfabecie, literą (szyfr monoalfabetyczny), przy czym kierunek zamiany musi być zachowany. Nie rozróżnia się przy tym liter dużych i małych.

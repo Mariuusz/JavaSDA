@@ -1,0 +1,4 @@
+Przygotuj dwa pliki zawierające kilkadziesiąt różnych wyrazów, każdy w nowej linii. Stwórz grę, w której gracz pierwszy pobiera losowy wyraz z tego pliku. Następnie gracz drugi pobiera z drugiego pliku pierwszy wyraz, który zaczyna się na ostatnią literę wyrazu pierwszego gracza. Przegrywa gracz, któremu nie został już żaden wyraz. Przy każdym kroku wyświetl informację jaki gracz aktualnie robi ruch oraz jaki wyraz wybrał. Po każdym kroku czekaj aż użytkownik wciśnie jakikolwiek klawisz (lub enter). Po zakończeniu gry wyświetl informację ile było ruchów oraz który gracz wygrał.
+
+Rozwinięcie:
+2. Przygotuj grę dla graczy. Wyświetl listę wyrazów do dyspozycji i pozwól użytkownikowi wybrać wyraz z listy. Następnie ten wyraz jest usuwany i pokazywana jest zaktualizowana lista. Następnie sprawdź, któremu graczowi brakuje wyrazów i wyświetl zwycięzcę.

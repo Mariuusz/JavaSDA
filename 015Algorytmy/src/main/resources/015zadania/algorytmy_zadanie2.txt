@@ -1,0 +1,38 @@
+Algorytm ma wczytywać z klawiatury wartości dwóch liczb oraz wyświetlać w kolejnych liniach następujące wyniki:
+1. Wykorzystując TYLKO dodawanie pomnożyć pierwszą liczbę przez drugą.
+2. Wykorzystując TYLKO dodawanie spotęgować pierwszą liczbę przez drugą.
+
+1. Przedstaw opis słowny problemu
+2. Przedstaw schemat blokowy
+3. Zaimplementuj algorytm.
+
+do zmiennej tymczasowej przechowuj wynik mnozenia
+dopóki counter mniejszy od drugiej liczby
+dodaj pierwsza liczbe do sumy
+
+podprogram multiply (a, b)
+    c := 0
+    dopóki i < b
+        c += a
+    
+    zwróć c
+	
+
+public class Main {
+    private int multiply(int a, int b) {
+        int suma = 0;
+        for (int i = 0; i < b; i++) {
+            suma += a;
+        }
+
+        return suma;
+    }
+
+    public static void main(String[] args) {
+        Main m = new Main();
+        System.out.println(m.multiply(6, 8));
+        System.out.println(m.multiply(6, 2));
+        System.out.println(m.multiply(6, 4));
+        System.out.println(m.multiply(2, 6));
+    }
+}
