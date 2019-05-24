@@ -1,0 +1,3 @@
+Przygotuj program sprawdzający szybkość działania linkedList i arrayList.
+Każdej z tych list wylosuj kilkaset tysięcy elementów.
+Dodaj te elementy w kilku pętlach, najpierw jako pierwszy element listy, później w środku, później na końcu. Sprawdź czasy wykonania programu

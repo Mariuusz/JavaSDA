@@ -1,0 +1,10 @@
+Utwórz klasę Wiadomosc:
+class Wiadomosc:
+    id
+    tekst
+    priorytet
+
+Następnie pobierz od użytkownika kilka wiadomości. Dodaj je do dwóch priorytetowych kolejek.
+Jedna dodaje elementy wedlug dlugosci tekstu, druga wedlug priorytetu.
+
+Wyświetl obie kolejki.

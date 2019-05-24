@@ -1,0 +1,50 @@
+package pl.sda.amen.zadMovie;
+
+//Movies database:
+//        Stwórz enum MovieType który posiada opcje:
+//        ACTION, DRAMA, COMEDY, HORROR
+//
+//        Stwórz model filmu, który : (klasa Movie)
+//        - posiada pole nazwa filmu - String
+//        - posiada pole typ filmu (enum)
+//        - posiada pole data wydania filmu - data
+//        - posiada pole nazwisko autora - String
+//
+//        1. Stwórz klasę MoviesDatabase która posiada:
+//        - jako pole posiada mapę filmów. Mapa powinna mapować z wartości typu String
+//          (będzie to nazwa filmu) na model (na obiekty klasy Movie)
+//        - stwórz metodę dodawania do bazy danych filmów ( addMovie(Movie m)) która dodaje do mapy film
+//        - stwórz metodę wyszukiwania filmów z bazy danych, która przyjmuje jako parametr nazwę filmu,
+//          a zwraca film który jest w bazie danych pod tą nazwą.
+//        - stwórz metodę wypisywania wszystkich filmów. Metoda powinna iterować po wartościach mapy i
+//          wypisywać informacje o filmie (nadpisz metodę toString w klasie ...[wiesz jakiej?]). metoda printAllMovies().
+//        - stwórz metodę o tej samej nazwie co powyższa, która przyjmuje jako parametr typ filmu (MovieType) i
+//          również iteruje wartości, jedak wypisuje tylko te filmy których MovieType odpowiada temu podanemu jako parametr.
+//
+//        2. Stwórz maina w którym będziesz testować tą funkcjonalność dodawania/wyszukiwania/wypisywania i
+//          filtrowania (wypisywanie tylko tych z wybranej kategorii) filmów.
+
+import java.time.LocalDate;
+import java.util.Optional;
+
+public class Main {
+    public static void main(String[] args) {
+
+        MoviesDatabase bazaFilmow = new MoviesDatabase();
+
+        bazaFilmow.dodajFilm(new Movie("a", "b", MovieType.ACTION, LocalDate.now()));
+
+        Optional<Movie> film = bazaFilmow.wyszukajFilm("avatar");
+
+        if (film.isPresent()) {
+            // wykonanie get() na pustym optionalu zwróci NoSuchElementException
+            System.out.println("Data wydania: " + film.get().getDataWydania());
+        } else {
+            System.out.println("Nie znaleziono filmu!");
+        }
+
+        bazaFilmow.wypiszWszystkieFilmy();
+
+
+    }
+}

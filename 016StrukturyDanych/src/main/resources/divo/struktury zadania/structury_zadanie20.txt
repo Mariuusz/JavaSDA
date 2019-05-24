@@ -1,0 +1,16 @@
+Przygotuj grę w kółko i krzyżyk dla dwóch osób. Komputer wyświetla komunikat:
+Gracz 1: Wpisz koordynaty.
+
+Następnie sprawdza czy pole nie jest zajęte.
+    Jeżeli nie jest stawia odpowiednią wartość (dla gracza 1 - x, dla gracza 2 - o).
+    Jeżeli jest zajęte wyświetla komunikat i prosi o ponowne podanie.
+
+Po dodaniu pola program powinien sprawdzić czy dany gracz wygrał (sprawdzenie całej kolekcji tylko dla znaku danego gracza).
+Jeżeli wszystkie pola zostaną zajęte i nikt nie wygrał, wyświetl odpowiedni komunikat.
+
+Spróbuj użyć klasy:
+Punkt:
+    x
+    y
+
+oraz HashMap, przechowującej jako kucz punkty, a jako wartość 'x' lub 'o', w zależności od gracza.

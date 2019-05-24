@@ -14,3 +14,4 @@ Kurs Java
 13. Adnotacje;
 14. GIT;
 15. Algorytmy;
+16. Struktury danych;

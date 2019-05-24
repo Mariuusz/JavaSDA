@@ -1,0 +1,26 @@
+Zadanie polega na obsłużeniu promu. Prom działa w taki sposób, że samochody, które wjadą pierwsze na prom, dojadą do końca promu i tam poczekają na kolejne. Kolejne, które wjadą znajdą się przy wyjeździe. Po dopłynięciu na miejsce najpierw wyjadą samochody, które wjechały jako ostatnie na prom. Zaimplementuj to zachowanie.
+
+Przygotuj klasę:
+class Samochod:
+    marka
+    cena
+    numer_rejestracyjny
+
+Utwórz stos `prom`:
+LinkedList<Samochod> prom = new LinkedList<>();
+
+Poproś użytkownika o podanie danych kolejnych samochodów wjeżdżających na prom.
+Dodaj samochód do stosu `prom`.
+Zapytaj się użytkownika czy chce kontynuować wprowadzanie danych.
+Jeżeli nie przechodzimy dalej.
+
+Pobierz wszystkie elementy ze stosu w odpowiedniej kolejności.
+Wyświetl Dane wszystkich samochodów.
+
+Rozwinięcie:
+2. Policz ile samochodów wjechało na prom oraz ile go opuściło. Sprawdź czy wszystkie samochody opuściły prom.
+3. Wylosuj liczbę ile samochodów opuści prom na raz. Sprawdź tak jak w pkt2.
+4. Dopóki wszystkie samochody nie opuściły promu losuj liczbę i wypuszczaj tylko tyle samochodów ile wolosowano.
+   Po każdej wylosowanej liczbie wypisz tekst:
+   "Czekam na wolne miejsce: " + wylosowanaLiczba
+5. Policz cenę samochodów podczas wjeżdżania na prom oraz po wyjechaniu. Wyświetl tą cenę.

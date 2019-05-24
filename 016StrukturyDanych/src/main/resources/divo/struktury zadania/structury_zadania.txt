@@ -1,0 +1,19 @@
+a. Napisz program tworzący mapę, która przyporządkowuje każdej liczbie z zakresu od 1 do 30 informację o tym, czy liczba jest liczbą pierwszą.
+b. Wypisz wszystkie pary na ekran w pętli for (entrySet)
+c. Wypisz wartości zwrócone z mapy dla kluczy 1,4,5,7,9,12
+
+Bazując na tekście:
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum dignissim tortor, ut porta dolor placerat sodales. Donec ut erat eget ligula bibendum consectetur. Phasellus non justo sed quam sollicitudin blandit vitae vel mauris. Etiam nulla magna, accumsan eget fermentum quis, hendrerit ut elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean consectetur lectus quis est laoreet, ac tincidunt nunc faucibus. Proin massa nibh, viverra id semper sit amet, semper sit amet arcu. Quisque dignissim felis risus, sed fermentum libero cursus et. Aenean tincidunt ligula nec risus faucibus sagittis a ac ante. Morbi lacinia tempor diam, ut accumsan nisl eleifend sit amet. Morbi ullamcorper, odio egestas facilisis tempus, libero nisi tempus felis, sed auctor dolor orci eu diam. Duis hendrerit libero eget lobortis semper. Donec maximus, nisi vel viverra mollis, quam enim pulvinar diam, eu varius lectus risus non lorem. Maecenas vitae urna sed urna fringilla accumsan. Aliquam erat volutpat. Aenean volutpat in nisl non eleifend. Aliquam eu bibendum enim. Donec dictum iaculis arcu. Suspendisse volutpat mauris sed odio iaculis, nec malesuada lorem condimentum. Nunc sed ante sit amet nulla placerat elementum. Nullam a nulla a arcu hendrerit bibendum. Etiam ut neque eget est tempus varius vel sit amet tortor. Nulla euismod luctus metus, sit amet tristique mauris ornare non. Curabitur vel ex rhoncus, efficitur nibh nec, posuere sapien. Cras in tellus sit amet quam auctor varius eget non sem. Proin mattis vitae quam et facilisis. Suspendisse vel magna eu quam hendrerit tincidunt nec ac nulla. Pellentesque feugiat tortor quis lacus posuere ultricies. Cras elit quam, porttitor et gravida id, vestibulum eget justo. Curabitur eget pellentesque arcu, non rhoncus lacus. In hac habitasse platea dictumst. Morbi vestibulum, massa in elementum dapibus, enim est rutrum nunc, eget accumsan nisi diam at mauris. Curabitur pulvinar tincidunt metus vel elementum. Sed porta nisl dolor, et molestie tortor ultrices in. Sed augue mi, interdum eget venenatis eu, finibus ac neque. Ut dignissim nunc non massa scelerisque pretium. Aliquam ultrices, nisi eget pretium euismod, orci mauris tristique dui, sit amet rhoncus tortor velit id lorem. Suspendisse eget ipsum risus. Etiam in efficitur nisl."
+wybierz z niego wszystkie wyrazy i wypisz na ekranie ile razy każdy z tych wyrazów występuje w tekście.
+
+d. Napisz metodę, która zwraca wartość słowa. Użyj mapy, która przyporządkowuje każdej literze wartość. Domyślna wartość dla litery to 1, dla pozostałych znaków 0.
+
+Poniższe znaki mają określone wartości:
+    y,h,q,x - 2
+    ą,ę,ó,ż,ź,ć,ś - 3
+
+sygnatura metody:
+public static int rank(String text);
+Przykłady:
+    “ręka” -> 6
+    “   .;a” -> 1

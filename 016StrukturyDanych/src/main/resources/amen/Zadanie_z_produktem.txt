@@ -1,0 +1,72 @@
+Stworzymy klasę produkt, którą będziemy się posługiwać w przyszłych aplikacjach.
+
+Stwórz klasę Produkt/Product która powinna mieć pola(PRYWATNE!):
+String nazwa;
+double cena;
+String numerKoduKreskowego;
+
+Stwórz w klasie: Gettery, Settery, metodę toString, konstruktor pusty, oraz konstruktor ze wszystkimi parametrami.
+
+Cel polecenia:
+Stworzymy aplikację 'kasa fiskalna'. Kasa zachowuje się podobnie jak ta w sklepie. Na początku jednak, żeby do kasy były dodane produkty, trzeba je 'zarejestrować' lub 'dodać do bazy'.
+
+Zadanie 1 - product database:
+Stwórz klasę BazaProduktów/ProductDatabase. W bazie stwórz dowolną wybraną przez Ciebie kolekcję produktów (stwórz listę/mapę lub zbiór produktów - wybieraj ostrożnie, ponieważ
+w zależności od decyzji jaką podejmiesz, będziesz musiał zaimplementować inny sposób wyszukiwania produktów w tej kolekcji).
+
+BazaProduktów/ProductDatabase :
+1. Stwórz kolekcję (ja przyjmę mapę) jako pole klasy.
+2. Dodaj do klasy konstruktor bez parametrów. 
+3. W konstruktorze przypisz do pola (kolekcji) nową kolekcję. (this.map = new HashMap<>())
+4. Stwórz metodę: Produkt wyszukajPoNazwie(String nazwa) - która jako parametr przyjmuje nazwę produktu, a w wyniku zwraca ten produkt.
+5. Stwórz metodę: Produkt wyszukajPoKodzie(String kod) - która jako parametr przyjmuje kod kreskowy produktu, a w wyniku zwraca ten produkt.
+6. Stwórz metodę: void dodajProdukt(String nazwa, double cena, String kodKreskowy) - która niczego nie zwraca i wewnątrz metody z podanych w metodzie parametrów tworzy się obiekt, a następnie umieść go w mapie/kolekcji.
+
+7. Stwórz klasę testową main i przetestuj dodawanie oraz wyszukiwanie produktów w bazie.
+
+Kasa fiskalna będzie KORZYSTAĆ z bazy i będzie wewnątrz jako pole posiadała referencję do bazy danych. Teraz przejdziemy do stworzenia odpowiedniej klasy KasaFiskalna/CashRegister której ustawimy referencję do bazy danych.
+
+Zadanie 2 - cash register part 1:
+Stwórz klasę KasaFiskalna/CashRegister której dodaj na razie jedno pole. Tym polem ma być referencja do BazyProduktów/ProductDatabase. Czyli dodaj w kasie fiskalnej pole typu BazaProduktów/ProductDatabase. Stwórz konstruktor z 
+parametrem którym ma być BazaProduktów/ProductDatabase. W konstruktorze przypisz do pola przekazany parametr.
+
+1. Stwórz metodę: Product wyszukajProdukt(String kodKreskowy) - która jako parametr przyjmuje kod kreskowy produktu, a jako wynik zwraca produkt.
+2. Stwórz nową klasę/exception ProductNotFoundException - który dziedziczy po Exception. Dodaj wiadomość do wyjątku.
+3. Zmodyfikuj swoją metodę wyszukajProdukt(String kodKreskowy) - w taki sposób aby wyszukiwała i zwracała produkt, ale jeśli go nie znajdzie, to aby rzucała exception ProductNotFoundException.
+
+4. Przetestuj działanie aplikacji. W mainie stwórz instancję klasy BazaProduktów/ProductDatabase, dodaj do niej kilka produktów. Po tej czynności stwórz instancję obiektu KasaFiskalna/CashRegister i w konstruktorze przekaż jej bazę produktów. Następnie przetestuj działanie metody 'wyszukajProdukt'.
+
+
+Zaczniemy od zmodyfikowania produktu tak, aby posiadał termin ważności.
+
+Zadanie 3 - data przydatnosci:
+
+1. Dodaj do klasy Product/Produkt pole. Pole powinno być typu LocalDateTime i nosić nazwę terminWażności/expiryDate. NIE PRZEKAZUJ WARTOŚCI POLA W KONSTRUKTORZE. Zamiast tego przypisz domyślnie dla nowo stworzonego produktu (w konstruktorze) termin ważności na 2 tygodnie od obecnej daty i godziny. Wygeneruj ponownie metodę toString().
+
+2. Dodaj do klasy BazaProduktów/ProductDatabase metodę wypisywania 'czy produkt jest ważny'. Stwórz metodę: void printExpiry(String kodKreskowy) - która wypisuje na ekran za ile dni produkt przestanie być ważny, a jeśli produkt stracił ważność, to niech wyrzuca (nowy - należy stworzyć) exception ProductExpiredException.
+
+3. Przetestuj dodawanie i wyszukiwanie produktów, oraz sprawdzanie terminu ważności. Zweryfikuj poprawność wypisanych danych.
+
+
+Do zaimplementowania będzie kod który będzie 'nabijał rachunek' na kasie fiskalnej. Każdy rachunek składa się z PARY informacji. Mamy tu na myśli pojedyncza pozycje na rachunku ze sklepu. Każda pozycja zawiera nazwe produktu(lub produkt) oraz ile tych produktów było zakupionych. Jest to 'krotka' na rachunku. Pojedyncza pozycja.
+
+Zadanie 4 - krotka:
+
+Stwórz klasę PozycjaRachunku/ReceiptEntry która posiada pola:
+Product produkt;
+double ilosc;
+
+Wygeneruj gettery, settery, konstruktory domyślny i pełny, oraz metodę toString.
+
+Zadanie 5:
+Stwórz klasę Rachunek/Receipt. Klasa powinna posiadać pola: 
+Listę krotek (PozycjaRachunku/ReceiptEntry)
+LocalDateTime datęWystawieniaRachunku
+
+Klasa powinna również posiadać metody takie jak:
+- double podliczRachunek() - która iteruje listę wpisów na rachunku i sumuje kwoty, a w wyniku zwraca wartość NETTO rachunku
+- int ilośćProduktow() - która zlicza ilość produktów na rachunku
+- double obliczPodatek - która oblicza 23% podatek VAT produktów
+- double obliczBrutto - która oblicza wartość brutto rachunku
+
+JEŚLI DOSZEDŁEŚ/ŁAŚ TUTAJ TO DAJ ZNAĆ PROWADZĄCEMU - dopisze ostatni podpunkt.

@@ -1,0 +1,1 @@
+Napisz metodę, która zliczy ile jest unikalnych znaków w napisie i zwróci ich ilość. Jako, że do metody mogą trafiać kilka razy takie same napisy, dodaj HashMapę w celu cacheowania wywołań.

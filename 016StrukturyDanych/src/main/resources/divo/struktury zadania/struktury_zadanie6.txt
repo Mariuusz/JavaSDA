@@ -1,0 +1,23 @@
+1. Przygotuj w swojej klasie (MyArrayList) metodę, która sprawdzi czy dany element występuje w tablicy.
+    W tym celu dodaj metodę: contains(Integer m)
+    Następnie przeiteruj po wszystkich elementach. Jeżeli `m` występuje na liście - zwróć true. W przeciwnym wypadku sprawdzaj dalej.
+2. Napisz program, który porówna dwie listy. Jeżeli są takie same zwróć `true`, w przeciwnym wypadku false.
+    Przygotuj metodę w Twojej klasie, która jako parametr przyjmie listę do sprawdzenia:
+        public boolean contains(MyArrayList otherList);
+    Następnie przeiteruj przez otherList i sprawdź czy każdy element z tej listy występuje w Twojej klasie.
+    Jeżeli jakiegoś elementu z otherList nie ma w Twojej klasie zwróć false.
+    W przeciwnym wypadku iteruj dalej.
+3. Zamień swoją klasę aby była generyczna lub przechowywałaby typ String.
+    Przerób metody, żeby działały z nowym typem.
+4. Stwórz dwie listy. Jedna z losowymi literami wpisanymi przez użytkownika, druga ze wszystkimi literami alfabetu. Porównując listę pełną do listy od użytkownika, stwórz listę trzecią, która będzie zawierała litery nie występujące w liście od użytkownika.
+5. Stwórz listę zawierającą wyrazy. Przeiteruj po całej liście sprawdzając, czy znajduje się tam litera "l". Jeżeli w danym wyrazie litera ta występuje - usuń ten wyraz. Nakoniec sprawdź ile wyrazów pozostało.
+6. Wyszukaj w tekście linijki zawierające wyrazy
+    Pobierz (z pliku lub od użytkownika) kilkanaście linijek tekstu.
+    Pobierz (wpisz na sztywno) kilka szukanych wyrazów (dodaj je do listy).
+    Przygotuj funkcję, która znajdzie numer linii, w której znajdzie wszystkie szukane wyrazy.
+    Aby to zrobić przygotuj listę list. Pierwsza lista przechowuje linie, druga lista przechowuje wyrazy.
+    Następnie dla każdej linii wywołaj contains (sprawdź szukane wyrazy).
+    Jeżeli contains zwróci true, oznacza to, że w linii są wszystkie szykane wyrazy.
+7. Dodaj nową metodę, która rozwinie działanie contains. Tym razem sprawdzi czy wszystkie elementy są w liście, ale również sprawdzi ich KOLEJNOŚĆ. Przygotuj przypadek testowy podobny jak poprzednio i wyświetl obie informacje, czyli najpierw znalezione linie gdzie jest kolejność zachowana, później gdzie nie jest zachowana.
+8. REGEX: pozwól, aby w szukanym wyrazie można było podać "?", który powie, że możemy akceptować dowolną literę.
+9. REGEX: pozwól, aby w szukanym wyrazie można było podać "%", który powie, że możemy akceptować dowolne litery do końca linii lub pasującego znaku.

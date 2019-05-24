@@ -1,0 +1,9 @@
+Bazując na własnej implementacji listy posortowanej, przygotuj funkcję, która pobierze dwie posortowane listy i scali je w nową listę zawierającą tylko elementy które NIE BYŁY wspólne dla tych list.
+Przygotuj również równoważną funkcję, która zwróci listę zawierającą elementy wspólne obu list.
+
+Działanie będzie podobne do usuwania. Tylko zamiast usuwać element z tablicy, dodamy go do nowej listy, którą zwrócimy. W tym celu:
+Utwórz metodę diff(MyList<Integer> otherList)
+Utwórz w niej nową tymczasową listę o nazwie: MyList<Integer> removed
+W niej przeiteruj wszystkie elementy z listy otherList i sprawdź czy istnieje w polu klasy
+Jeżeli element nie istnieje dodaj go do listy removed.
+Na koniec zwróć listę removed z funkcji

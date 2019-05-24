@@ -1,0 +1,12 @@
+Do Twojej implementacji listy dorób funkcję, która usuwa wszystkie elementy, które występują w innej kolekcji.
+
+W tym celu dodaj do klasy metodę remove(MyList<Integer> otherList).
+W tej metodzie przeiteruj pętlą po wszystkich elementach listy `otherList`.
+Następnie dla każdego elementu sprawdź czy występuje w polu klasy.
+Jeżeli tak to usuń go z pola.
+
+Rozwinięcie
+2. Przygotuj osobną implementację funkcji (bardziej wydajną) wiedząc, że obie listy są posortowane
+3. Przygotuj osobną implementację funkcji (bardziej wydajną) wiedząc, że tylko jedna lista jest sortowana.
+
+2. Działanie podobne jak w poprzednim przykładzie, jednak skoro obie listy są posortowane nie musimy sprawdzać wszystkich elementów tylko w kolejności. Nie musimy wracać do początku.

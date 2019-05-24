@@ -1,0 +1,38 @@
+Przygotuj program zarządzający magazynem produktów w sklepie. Produkty będą podzielone na kilka kategorii (nabial, owoce, warzywa, pieczywo). Zastosuj enumy żeby trzymać kategorie.
+
+Utwórz klasę magazyn z metodami dodającymi produkty do odpowiedniej kategorii oraz sprawdzającą czy produkt jest z danej kategorii
+class Magazyn:
+    produktyZKategorii
+
+    dodajProdukt
+    usunProdukt
+    usunProduktyNieSwieze
+    sprawdzCzyProduktWKategorii
+
+Każdy produkt powinien mieć unikalną wartość, nazwę, cenę, kategorię i klasę cenową (jeżeli cena < 10 - klasa niska, jeżeli >= 10 - klasa wysoka; użyj enum).
+class Produkt:
+    unique_id
+    dataSpozycia
+    nazwa
+    cena
+    kategoria
+    klasa
+
+Napisz metodę, w klasie produkt, która doda odpowiednią klasę w zależności od ceny
+
+Utwórz klasę Zarzadca, która będzie zarzadzac magazynem. W mapie zarzadca przechowa różne magazyny, w kluczu trzymając ich nazwę. Jeżeli zarządca popełni błąd i spróbuje dodać magazyn z nazwą która już istnieje powinniśmy mu to uniemożliwić.
+Zarzadca powinien mieć metodę, która pozwoli mu wyrzucić produkty, ze złą datą spożycia
+class Zarzadca:
+    magazyny
+
+    dodajMagazyn
+    wyczyscMagazyn
+
+Do każdej klasy dodaj metodę toString
+
+Utwórz kilka produktów z różnych kategorii i klas.
+Utwórz kilka magazynów. Dodaj do nich produkty.
+W main utwórz zarządcę, do którego dodaj magazyny.
+
+Wyświetl najdroższy produkt z każdego magazynu i wyświetl go razem z nazwą magazynu.
+Usun nieświeże produkty i wyświetl wszystkie produkty. Sprawdź czy usunęło.

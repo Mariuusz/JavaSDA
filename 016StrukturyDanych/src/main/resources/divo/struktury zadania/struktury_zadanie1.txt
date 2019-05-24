@@ -1,0 +1,6 @@
+Do własnej implementacji listy dodaj funkcję usuwającą wszystkie wystąpienia elementu x.
+Przygotuj dwie implementacje tej metody: rekurencyjną i iteracyjną.
+
+Dodaj do listy metodę: public void remove(Integer x)
+Przeiteruj przez wszystkie elementy z pola i sprawdź czy element x znajduje się w polu.
+Jeżeli tak usuń z pola

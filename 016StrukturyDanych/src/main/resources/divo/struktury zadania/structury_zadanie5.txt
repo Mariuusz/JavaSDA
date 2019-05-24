@@ -1,0 +1,4 @@
+Napisz program losujący 500 liczb rzeczywistych z przedziału <0,5),
+a następnie wyświetl na ekranie wykres rozłożenia tych liczb.
+Na osi pionowej wyświetli ilość wylosowanych liczb (znormalizowaną do 10),
+na osi poziomej wyświetli przedziały co 0.5.

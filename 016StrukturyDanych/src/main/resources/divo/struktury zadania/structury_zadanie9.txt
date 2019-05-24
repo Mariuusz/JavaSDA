@@ -1,0 +1,1 @@
+Napisz metodę odwracającą napis za pomocą stosu i wyświetl odwrócony napis na ekran.
