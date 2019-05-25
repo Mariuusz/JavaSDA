@@ -1,0 +1,9 @@
+
+------
+wiek=3
+wzrost=3
+czyKobieta=false
+zarobki=4.0
+czyMaPsa=false
+rozmiarButa=4
+opinia=lipa
