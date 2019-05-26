@@ -17,3 +17,4 @@ Kurs Java
 16. Struktury danych;
 17. Pliki;
 18. Threads;
+19. Design Patterns;
