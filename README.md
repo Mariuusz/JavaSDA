@@ -18,3 +18,4 @@ Kurs Java
 17. Pliki;
 18. Threads;
 19. Design Patterns;
+20. Design Patterns;

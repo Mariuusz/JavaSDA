@@ -1,0 +1,2 @@
+Request{userName='Mariusz', type=MARKETING, content='kiwi 5'}
+Request{userName='Mariusz', type=SERVICE, content='naprawa laptopa 1'}
