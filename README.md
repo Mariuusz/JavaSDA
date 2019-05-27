@@ -21,3 +21,4 @@ Kurs Java
 20. Design Patterns;
 21. TDD;
 22. Bazy danych;
+23. JDBC;
