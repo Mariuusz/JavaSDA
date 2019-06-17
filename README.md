@@ -22,3 +22,4 @@ Kurs Java
 21. TDD;
 22. Bazy danych;
 23. JDBC;
+24. Hibernate;
