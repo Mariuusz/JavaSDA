@@ -1,0 +1,72 @@
+/*Nie używać '!important'. Nie o to chodzi w tym zadaniu*/
+
+header h1.header-title {
+    background-color: red;
+}
+
+header > div > p {
+    background-color: green;
+}
+
+aside span:nth-child(3n){
+    background-color: green;
+}
+
+aside span:first-child {
+    background-color: blue;
+}
+
+aside span:nth-last-child(2) {
+    background-color: red;
+}
+
+aside div:first-of-type {
+    background-color: yellow;
+}
+
+main section.main-section-1.main-section-2 {
+    background-color: red;
+}
+
+#main-p::first-line {
+    background-color: blue;
+}
+
+#main-p::first-letter {
+    background-color: green;
+}
+
+main #main-div-id.main-div-class {
+    background-color: red;
+}
+
+
+/* --------------------------------------
+Tego co poniżej nie zmieniać. Swoje rozwiązanie umieszczamy wyżej
+-----------------------------------------*/
+.header-title {
+    background-color: yellow;
+}
+
+header p {
+    background-color: blue;
+}
+
+aside div {
+    display: inline;
+    background-color: white;
+}
+
+section.main-section-1.main-section-2 {
+    background-color: green;
+}
+
+#main-p {
+    width: 300px;
+}
+
+main > #main-div-id {
+    background-color: white;
+}
+
+

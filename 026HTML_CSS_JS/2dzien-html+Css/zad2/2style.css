@@ -1,0 +1,41 @@
+a:hover {
+    background-color: red;
+}
+
+header :first-child {
+    background-color: aqua;
+}
+
+header :nth-child(3) {
+    background-color: bisque;
+}
+
+header :nth-child(2n) {
+    background-color: blue;
+}
+
+div::first-letter {
+    font-size: 30px;
+    background-color: blueviolet;
+}
+
+p::after {
+    content: ' to jest tekst za p';
+    background-color: red;
+}
+/*div {
+    position: absolute;
+    top: 50px;
+    left: 22px;
+    background-color: red;
+}
+
+p {
+    position: relative;
+    left: 40px;
+}
+
+header {
+    position: fixed;
+    background-color: green;
+}*/

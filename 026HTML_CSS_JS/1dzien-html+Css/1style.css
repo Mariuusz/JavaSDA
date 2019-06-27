@@ -1,0 +1,27 @@
+div {
+    color: red;
+}
+
+#my-div {
+    color: blue;
+}
+
+.my-class {
+    font-size: 30px;
+}
+
+.my-class.other {
+    color: green;
+}
+
+.other, div > span, header {
+    background-color: aqua;
+}
+
+div > span {
+    color: yellow;
+}
+
+p + section {
+    background-color: aquamarine;
+}

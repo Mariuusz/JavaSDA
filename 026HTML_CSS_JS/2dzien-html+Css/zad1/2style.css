@@ -1,0 +1,17 @@
+div {
+    position: absolute;
+    top: 118px;
+    left: 30px;
+    background-color: red;
+}
+
+p {
+    position: relative;
+    top: 185px;
+    left: 25px;
+}
+
+header {
+    position: fixed;
+    background-color: green;
+}

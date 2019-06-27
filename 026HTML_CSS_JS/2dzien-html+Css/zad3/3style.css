@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: beige;    
+}
+
+aside {
+    background-color: skyblue; 
+    width: 30%;
+} 
+
+main {
+    background-color: darkgrey;
+    width: 70%;
+}
+
+article {
+    background-color: cyan;
+}
+
+footer {
+    background-color: dimgray;
+}
