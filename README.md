@@ -25,3 +25,4 @@ Kurs Java
 24. Hibernate;
 25. HTTP;
 26. HTML, CSS, JS;
+27. JSP;

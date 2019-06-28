@@ -1,0 +1,58 @@
+<%@ page import="java.time.LocalDate" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>--%>
+
+<%
+    String[] days = {"poniedziałek", "wtorek", "środa",
+            "czwartek", "piątek", "sobota", "niedziela"};
+
+    int nr = LocalDate.now().getDayOfWeek().getValue();
+
+    for (int i=0; i<days.length; i++) {
+        String style = "";
+        // jesli niedziela
+
+
+        if (i == days.length-1) {
+            style += "color: red;";
+        }
+        // jesli sobota
+        if (i == days.length-2) {
+            style += "color: grey;";
+        }
+        // jesli to dzis
+        if (nr == i+1) {
+            style += "font-weight: bold;";
+        }
+
+        if (style.isEmpty()){
+%><span><%
+            } else {
+                %> <span style="<%= style%>"><%
+    }
+
+    out.print(days[i]);
+%></span><%
+
+            if (i < days.length-1) {
+                out.println(" | ");
+            }
+        }
+        %><br />
+    <%
+        String uri = request.getRequestURI();
+
+        String[] items = {"index", "uptime", "multiplication", "json", "counter"};
+
+
+
+        %>Menu: <%
+
+        for (String item : items){
+
+            if (uri.contains(item)){
+            %><span style="font-weight: bold"><%=item%></span> | <%
+        } else {
+                %><a href="<%=item%>.jsp"><%=item%></a> | <%
+        }
+    }
+%>
