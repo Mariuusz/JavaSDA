@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <div th:replace="header :: links"></div>
+
+</head>
+<body>
+
+<div th:replace="header :: navbar-fragment"></div>
+
+<div class="container theme-showcase" role="main">
+    <h2 th:if="${addedTask.getChange_id()} == null">
+        Add Task page!
+    </h2>
+    <h2 th:if="${addedTask.getChange_id()} != null">
+        Edit Task page!
+    </h2>
+
+    <form th:action="@{/addTask}" method="post" th:object="${addedTask}">
+        <input th:if="${addedTask.getChange_id()} != null" type="hidden" class="form-control" id="change_id"
+               th:field="*{change_id}" >
+        <div class="row">
+            <div class="col-md-3">
+                <label for="title">Title</label>
+            </div>
+            <div class="col-md-5">
+                <input type="text" class="form-control" id="title" th:field="*{add_title}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <label for="description">Description</label>
+            </div>
+            <div class="col-md-5">
+                <input type="text" class="form-control" id="description" th:field="*{add_description}">
+            </div>
+        </div>
+        <div class="row col-md-offset-3">
+            <input type="submit" class="form-control" value="Add">
+        </div>
+    </form>
+</div>
+
+<div th:replace="header :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <div th:replace="header :: links"></div>
+
+</head>
+<body>
+
+<div th:replace="header :: navbar-fragment"></div>
+
+<div class="container theme-showcase" role="main">
+    <h2>
+        This is userInfo page!
+    </h2>
+
+    <h4>Task List:</h4>
+    <div class="row col-md-12">
+        <div class="row">
+            <div class="row bold-text border-solid-thick">
+                <div class="col-md-2">Title</div>
+                <div class="col-md-4">Description</div>
+                <div class="col-md-2">Time added</div>
+                <div class="col-md-1">Is Done</div>
+                <div class="col-md-3">Actions</div>
+            </div>
+            <div class="row border-solid" th:each="task : ${task_list}">
+                <div class="col-md-2"><p th:text="${task.getTitle()}"></p></div>
+                <div class="col-md-4"><p th:text="${task.getDescription()}"></p></div>
+                <div class="col-md-2"><p th:text="${task.getAddTime()}"></p></div>
+                <div class="col-md-1"><p th:text="${task.isDone()}"></p></div>
+                <div class="col-md-3 row">
+                    <div class="col-md-6">
+                        <a th:href="@{'/change/' + ${task.getId()}}">Change status</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a th:href="@{'/editTask/' + ${task.getId()}}">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div th:replace="header :: footer"></div>
+</body>
+</html>
